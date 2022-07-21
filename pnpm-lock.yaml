@@ -11,7 +11,7 @@ specifiers:
   netlify: 6.1.29
   node-sass: 6.0.1
   plyr: 3.7.2
-  plyr-react: 3.2.1
+  plyr-react: 5.1.0
   react: 17.0.2
   react-dom: 17.0.2
   react-modal-video: 1.2.9
@@ -36,7 +36,7 @@ dependencies:
   netlify: 6.1.29
   node-sass: 6.0.1
   plyr: 3.7.2
-  plyr-react: 3.2.1_react-dom@17.0.2+react@17.0.2
+  plyr-react: 5.1.0_react@17.0.2
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-modal-video: 1.2.9_react-dom@17.0.2+react@17.0.2
@@ -12113,16 +12113,18 @@ packages:
       find-up: 3.0.0
     dev: false
 
-  /plyr-react/3.2.1_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-ZXMA+d837mZCkb68oTXso6rH8O+B2+A7t8ux1fdU+kFSUh1NZa1/iuItItFgScmVC6FoO3DNj+FkZP2aikxoKg==}
-    engines: {node: '>=10', npm: '>=6'}
+  /plyr-react/5.1.0_react@17.0.2:
+    resolution: {integrity: sha512-N0qIuN1wZZzpKUXngtNeZwTiWqvOb6qAzqcfMI48rLkRJGM5xM5MRWILd3hW1PWPbVBKsAH4Ged32ZZhkJVbXA==}
+    engines: {node: '>=12.7.0'}
     peerDependencies:
-      react: ^16.13.0  || ^17.0.0
-      react-dom: ^16.13.0  || ^17.0.0
+      react: '>=16.8'
+    peerDependenciesMeta:
+      react:
+        optional: true
     dependencies:
       plyr: 3.7.2
       react: 17.0.2
-      react-dom: 17.0.2_react@17.0.2
+      react-aptor: 2.0.0-alpha.1_react@17.0.2
     dev: false
 
   /plyr/3.7.2:
@@ -13231,6 +13233,18 @@ packages:
       raf: 3.4.1
       regenerator-runtime: 0.13.9
       whatwg-fetch: 3.6.2
+    dev: false
+
+  /react-aptor/2.0.0-alpha.1_react@17.0.2:
+    resolution: {integrity: sha512-FbvxQKsZMUZcLr2WdrQEmxH0kifsN4N+v6YdL1g3At03zouJCEcPXv+o+bhP3Ci3ya4QPvNHK/bpbrCzuKWOMw==}
+    engines: {node: '>=12.7.0'}
+    peerDependencies:
+      react: '>=16.8'
+    peerDependenciesMeta:
+      react:
+        optional: true
+    dependencies:
+      react: 17.0.2
     dev: false
 
   /react-dev-utils/11.0.4_eslint@7.31.0+webpack@4.44.2:
